@@ -1,0 +1,397 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    border: none;
+  
+    display: none;
+    position: absolute;
+    background-color: #e6e6e6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  topnav {
+    overflow: hidden;
+    color: black;
+  }
+  
+  
+  
+  topnav a {
+    font-family: monospace;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  topnav a:hover {
+    background-color: #e9e7e7;
+    color: black;
+  }
+  
+  
+  
+  topnav a.active {
+    background-color: #23b9db;
+    color: black;
+  }
+  img {border: 0px solid black;
+    background-color: white;
+    border-radius: 0px;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+  }
+  
+  body {
+  
+    text-align: center;
+    background-color: #d9dadb;
+   background-image: url("pattern2.jpg");
+  }
+  header {
+    background-color: #000000;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    height: 100%; 
+  }
+  footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px;
+    color: black;
+  }
+
+  h5 {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 32px;
+  }
+  h1 {
+    color: black;
+    font-weight: bold;
+    font-family: monospace;
+  }
+  
+  p1 {
+    font-family: monospace;
+    text-align: center;
+    font-weight: bold;
+    width: 500px;
+    border-radius: 10px;
+  
+  }
+  p {
+  
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    background-color: #ffffff;
+
+    padding: 10px;
+    margin: 20px;
+  }
+  p5 {
+    color: white
+  }
+  p2 {
+    font-family: monospace;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    width: 500px;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+  }
+  p4 {
+    color: white;
+    font-family: monospace, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  h2 {
+    text-decoration: underline;
+    font-style: italic;
+    font-family: monospace;
+    text-align: centre;
+    width: 550px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  h3 {
+  
+    width: 400px;
+    border-radius: 0px;
+    padding: 10px;
+    margin: 10px auto; /* shorthand for top/bottom: 10px, left/right: auto */
+    text-align: left;
+    font-family: monospace;
+  }
+  h4 { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(138, 192, 7, 0);
+    width: 300px;
+  }
+  
+  div.sticky {
+    position: sticky;
+    
+    bottom: 70px;
+    border: 3px solid rgba(138, 192, 7, 0);
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #fffbfb;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .container {
+    display: flex;                     /* Enables flexbox layout */
+    justify-content: space-between;    /* Distributes space between items */
+    align-items: flex-start;           /* Aligns items at the top */
+    gap: 20px;                         /* Adds spacing between the flex items */
+    padding: 20px;                     /* Adds some padding around the container */
+  }
+  
+  .form-section {
+    margin: 10px;                      /* Adds some space around each section */
+    flex: 1;                           /* Makes sections flexible and equal width */
+  }
+  
+  textarea, ol {
+    width: 100%;                       /* Ensures textarea and ol take full width */
+    margin-top: 10px;                  /* Adds some space between elements */
+  }
+  
+  form {
+    width: 100%;                       /* Ensures the form itself spans the entire width */
+  }
+  
+  input[type="text"] {
+    width: 30%;                       /* Ensure inputs also take full width */
+    margin-bottom: 10px; 
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/* Adds space between the input and other elements */
+  }
+  ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;  /* Remove default padding */
+  }
+  
+  /* Styling for individual list items */
+  #item-list li, #movie-list li, #game-list li, #music-list li {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    padding: 8px; /* Adjusted padding for smaller size */
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 400px; /* Set a max width to prevent items from being too wide */
+    margin-left: auto; /* Center the list item */
+    margin-right: auto; /* Center the list item */
+  }
+  
+  /* Hover effect to enlarge */
+  #item-list li:hover, #movie-list li:hover, #game-list li:hover, #music-list li:hover {
+    transform: scale(1.05); /* Slightly smaller enlarge effect */
+    background-color: #e0e0e0; /* Optional: change background on hover */
+  }
+  
+  /* Text alignment and positioning */
+  #item-list, #movie-list, #game-list, #music-list {
+    text-align: left; /* Align text to the left */
+    margin-top: 10px; /* Add spacing above the lists */
+  }
+  button {
+    background-color: #007BFF;  /* Primary color (blue) */
+    color: white;               /* Text color */
+    border: none;               /* Removes default border */
+    padding: 10px 20px;         /* Padding for the button */
+    font-size: 16px;            /* Font size */
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;            /* Changes the cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for background, scale, and shadow */
+  }
+  
+  button:hover {
+    background-color: #0056b3;  /* Darker shade of blue on hover */
+    transform: scale(1.05);     /* Slightly enlarges the button on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Adds a subtle shadow */
+  }
+  
+  button:active {
+    transform: scale(1);        /* Removes the scale effect when the button is clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  /* Slightly reduces the shadow on click */
+  }
+  #tts-button {
+    position: fixed;          /* Ensures the button stays fixed even when scrolling */
+    top: 20px;                /* Adjusts the distance from the top */
+    right: 20px;              /* Adjusts the distance from the right side */
+    padding: 10px 20px;       /* Adds some padding for the button */
+    background-color: #007BFF; /* Button color */
+    color: white;             /* Text color */
+    border: none;             /* Removes border */
+    border-radius: 5px;       /* Rounds the corners */
+    cursor: pointer;          /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  #tts-button:hover {
+    background-color: #db7070; /* Darker blue on hover */
+    transform: scale(1.05);    /* Slightly enlarge on hover */
+  }
+  * {
+    font-family: 'Verdana', sans-serif; /* Keep or change the font if needed */
+    font-size: 14px; /* Slightly smaller base font size */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --bg-color: #ffffff; /* Background color for the body */
+    --text-color: #000000; /* Text color */
+    --highlight-color: #007bff; /* Button color */
+    
+    /* Define colors for divs */
+    --div-color-1: #ffffff; /* Color for first div */
+    --div-color-2: #f0f0f0; /* Color for second div */
+    --div-color-3: #d9dadb; /* Color for third div */
+    --footer: #1f1f1f;
+  }
+  
+  /* Colorblind Mode */
+  .colourblind-mode {
+    --bg-color: #f5f5f5;
+    --text-color: #000000;
+    --highlight-color: #f39c12; /* Colorblind-friendly highlight */
+    
+    /* Colorblind-friendly div colors */
+    --div-color-1: #e5e5e5; /* Adjusted color for first div */
+    --div-color-2: #cccccc; /* Adjusted color for second div */
+    --div-color-3: #b3b3b3; /* Adjusted color for third div */
+    --footer: #333333;
+  }
+  
+  /* Apply colors */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  #colourblind-toggle {
+    position: fixed;          /* Ensures the button stays fixed even when scrolling */
+    top: 20px;                /* Adjusts the distance from the top */
+    right: 150px;  
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--highlight-color);
+  }
+  
+  /* Styles for divs */
+  .div-1 {
+    background-color: var(--div-color-1);
+    padding: 20px;
+  }
+  
+  .div-2 {
+    background-color: var(--div-color-2);
+    padding: 20px;
+  }
+  
+  .div-3 {
+    background-color: var(--div-color-3);
+    padding: 20px;
+  }
+  .div-4 {
+    background-color: var(--div-color-3);
+    padding: 20px;
+    bottom: 0px;
+  }
+  .div-5 {
+    background-color: black;
+    padding: 20px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+  li {
+    background-color: var(--list-item-bg);
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: var(--list-item-hover);
+  }
+
+  
+  .extras a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .extras a:hover {
+    text-decoration: underline;
+  }
+  
+  .extras p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  #login-button {
+    width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+
+  }
